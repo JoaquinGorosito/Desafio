@@ -1,0 +1,39 @@
+
+    <%- include('header') -%>
+    <main>
+      <form action="/user/login" method="POST">
+        <div class="ingresoManual">
+          <p class="ingresa-cuenta">Ingresá con tu cuenta</p>
+          <br />
+          <label for="email">Usuario</label>
+          <input
+            class="email"
+            type="text"
+            placeholder="Ingresá tu usuario o correo electrónico"
+            name="email"
+          />
+          <br />
+          <label for="password">Contraseña</label>
+          <input
+            class="password"
+            type="password"
+            placeholder="Ingresá tu contraseña"
+            name="password"
+          />
+          <br />
+
+          <label for="recordarUsuario"
+            ><input type="checkbox" name="recordarUsuario" /> Recordar
+            usuario</label
+          >
+          
+        </div>
+        <div class="ingresos">
+          <button type="submit" class="ingresar">Ingresá</button>
+          <a href="/users/register" class="registrate">Registrate</a>
+        </div>
+      </form>
+    </main>
+    <%- include('footer') %>
+    <!--script type="text/javascript" src="/js/form_validations/validationFrontLogged.js"></script-->
+  
